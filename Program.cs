@@ -12,7 +12,7 @@ namespace ConsoleApp1
             head = null;
         }
 
-        // Add a new contact to the list
+   
         public void AddContact(string name, string phoneNumber)
         {
             if (!ContactExists(name))
@@ -28,7 +28,7 @@ namespace ConsoleApp1
             }
         }
 
-        // Get a contact's phone number by name
+
         public string GetContact(string name)
         {
             Node current = head;
@@ -43,7 +43,6 @@ namespace ConsoleApp1
             return "Contact not found";
         }
 
-        // Delete a contact by name
         public string DeleteContact(string name)
         {
             if (head == null)
@@ -71,7 +70,7 @@ namespace ConsoleApp1
             return "Contact not found";
         }
 
-        // Update a contact's phone number by name
+        
         public void UpdateContact(string name, string newPhoneNumber)
         {
             Node current = head;
@@ -88,7 +87,7 @@ namespace ConsoleApp1
             Console.WriteLine($"Contact with name {name} not found.");
         }
 
-        // Check if a contact exists by name
+       
         public bool ContactExists(string name)
         {
             Node current = head;
@@ -103,7 +102,7 @@ namespace ConsoleApp1
             return false;
         }
 
-        // List all contacts
+        
         public void ListAllContacts()
         {
             if (head == null)
@@ -121,7 +120,7 @@ namespace ConsoleApp1
             }
         }
 
-        // Count total number of contacts
+       
         public int CountContacts()
         {
             int count = 0;
@@ -134,7 +133,7 @@ namespace ConsoleApp1
             return count;
         }
 
-        // Clear all contacts
+       
         public void ClearAllContacts()
         {
             head = null;
