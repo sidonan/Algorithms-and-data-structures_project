@@ -82,7 +82,7 @@ namespace ConsoleApp1
                     current.PhoneNumber = newPhoneNumber;
                     Console.WriteLine($"Phone number of contact {name} updated to {newPhoneNumber}.");
                     return;
-                }
+                } 
                 current = current.Next;
             }
             Console.WriteLine($"Contact with name {name} not found.");
