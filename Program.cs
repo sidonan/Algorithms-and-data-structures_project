@@ -141,6 +141,6 @@ namespace ConsoleApp1
             Console.WriteLine("All contacts deleted.");
         }
     }
-
+     
 
 } 
